@@ -12,13 +12,13 @@
         ></a>
       </div>
       <div>
-        <a :href="post.link" @click="showPost($event, post.link)" target="_blank" class="post-title">
+        <a :href="post.link" @click="showPost($event, post.link)" target="_blank" :class="postTitleClass">
           <h2>{{ post.title }}</h2>
         </a>
       </div>
-      <div class="author mt-2">Author: {{ post.author }}</div>
+      <div :class="authorClass">Author: {{ post.author }}</div>
       <div class="excerpt" v-html="formatPostDescription(post.description)"></div>
-      <div class="read-more">
+      <div :class="buttonDivClass">
         <a
           :href="post.link"
           @click="showPost($event, post.link)"
@@ -51,6 +51,9 @@ export default {
       "currentPost",
       "postStyle",
       "buttonClass",
+      "buttonDivClass",
+      "authorClass",
+      "postTitleClass",
       "readMore",
       "offset"
     ]),

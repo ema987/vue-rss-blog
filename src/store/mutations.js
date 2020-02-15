@@ -59,6 +59,24 @@ export function setButtonClass(state, payload) {
   }
 }
 
+export function setButtonDivClass(state, payload) {
+  if (payload) {
+    state.buttonDivClass = payload;
+  }
+}
+
+export function setAuthorClass(state, payload) {
+  if (payload) {
+    state.authorClass = payload;
+  }
+}
+
+export function setPostTitleClass(state, payload) {
+  if (payload) {
+    state.postTitleClass = payload;
+  }
+}
+
 export function setReadMore(state, payload) {
   if (payload) {
     state.readMore = payload;

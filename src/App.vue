@@ -23,6 +23,9 @@ export default {
     'layout',
     'poststyle',
     'buttonclass',
+    'buttondivclass',
+    'authorclass',
+    'posttitleclass',
     'readmore',
     'offset'
   ],
@@ -41,6 +44,9 @@ export default {
     this.$store.commit('setPostStyle', this.poststyle)
     this.$store.dispatch('getPosts', this.rss)
     this.$store.commit('setButtonClass', this.buttonclass),
+    this.$store.commit('setButtonDivClass', this.buttondivclass),
+    this.$store.commit('setAuthorClass', this.authorclass),
+    this.$store.commit('setPostTitleClass', this.posttitleclass),
     this.$store.commit('setReadMore', this.readmore),
     this.$store.commit('setOffset', this.offset)
   },
