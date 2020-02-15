@@ -43,6 +43,9 @@ new Vue({
         layout: this.$el.dataset.layout,
         poststyle: this.$el.dataset.poststyle,
         buttonclass: this.$el.dataset.buttonclass,
+        buttondivclass: this.$el.dataset.buttondivclass,
+        authorclass: this.$el.dataset.authorclass,
+        posttitleclass: this.$el.dataset.posttitleclass,
         readmore: this.$el.dataset.readmore,
         offset: this.$el.dataset.offset
       }

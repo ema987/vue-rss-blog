@@ -40,6 +40,9 @@ Options are passed in as data attributes on the entry point div
              data-poststyle="inline"
              data-readmore="Read the rest"
              data-buttonclass="btn btn-primary"
+             data-buttondivclass="read-more mt-1"
+             data-authorclass="mt-2"
+             data-posttitleclass="post-title"
              data-offset="-100"></div>
 
 ...
@@ -71,6 +74,9 @@ This is the way your posts are shown in summary.
 |data-layout|grid|Optional|Styles the index of available posts, can be set to "grid" or "slider"|
 |data-poststyle|modal|Optional|The style of posts when you click on an excerpt in the index can be set to one of: "modal", "inline" or "external", external opens the post's source with a target of _blank|
 |data-buttonclass|  |Optional|Space separated list of classes to apply to the read more button|
+|data-buttondivclass|  |Optional|Space separated list of classes to apply to the parent div of the read more button|
+|data-authorclass|  |Optional|Space separated list of classes to apply to the author text|
+|data-posttitleclass|  |Optional|Space separated list of classes to apply to the post title text|
 |data-readmore|Read more|Optional|Text to show on the read more button|
 |data-offset|0|Optional|If you have a fixed header then you can set a negative offset integer for scrolling when the posts are shown inline e.g. -100 (converts to pixels)|
 

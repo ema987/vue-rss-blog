@@ -8,6 +8,9 @@ export default {
   currentPost: null,
   postStyle: "modal",
   buttonClass: "",
+  buttonDivClass: "read-more",
+  authorClass: "author mt-2",
+  postTitleClass: "post-title",
   readMore: "Read more",
   offset: 0
 };
